@@ -19,7 +19,7 @@ class students(db.Model):
     def __repr__(self):
         return "<User {}>".format(self.username)
 
-class ohlc_test(db.Model):
+class ohlc_test1(db.Model):
     id = db.Column('ohlc_id', db.Integer, primary_key=True)
     open = db.Column(db.Float)
     high = db.Column(db.Float)

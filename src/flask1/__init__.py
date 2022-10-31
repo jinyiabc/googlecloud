@@ -6,9 +6,9 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import logging
 
-from .connect_connector import connect_with_connector
-from .connect_tcp import connect_tcp_socket
-from .connect_unix import connect_unix_socket
+# from .connect_connector import connect_with_connector
+# from .connect_tcp import connect_tcp_socket
+# from .connect_unix import connect_unix_socket
 
 # def init_connection_pool() -> sqlalchemy.engine.base.Engine:
 #     # use a TCP socket when INSTANCE_HOST (e.g. 127.0.0.1) is defined

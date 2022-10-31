@@ -4,11 +4,11 @@ from flask import Flask, request, flash, url_for, redirect, render_template, jso
 from flask import current_app as app
 from flask import make_response, redirect, render_template, request, url_for
 import logging
-from .models import students, db, ohlc_test
+from .models import students, db, ohlc_test1
 logger = logging.getLogger()
 @app.route('/')
 def ohlc_all():
-    return render_template('ohlc_all.html', ohlc_all=ohlc_test.query.all())
+    return render_template('ohlc_all.html', ohlc_all=ohlc_test1.query.all())
 
 # @app.route('/index')
 # def index():
@@ -42,7 +42,7 @@ def ohlc():
             content = request.get_json()
             logger.warning(f"Content of REQUEST: '{content}'")  # {'symbol':'ES1', 'dt':'2022-10-31T14:13:00Z', 'open':3878.5, 'high':3878.5, 'low':3877.5, 'close':3878, 'volume':215}
             temp_dt = dt.fromisoformat(content['dt'][:-1])
-            ohlc = ohlc_test(content['symbol'], temp_dt, content['open'], content['high'],
+            ohlc = ohlc_test1(content['symbol'], temp_dt, content['open'], content['high'],
                                content['low'], content['close'], content['volume'])
             db.session.add(ohlc)
             db.session.commit()
