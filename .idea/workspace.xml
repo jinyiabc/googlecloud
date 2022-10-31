@@ -5,39 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28b81896-8bbc-4be4-8d76-af9032b0cba6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/mysql-deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/connect_connector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/connect_tcp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/helper1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/helper1/configSQL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/helper1/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/helper1/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/requirements1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/show_all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/templates/vote.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backup/vote.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flask1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flask1/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flask1/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flask1/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flask1/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flask1/templates/ohlc_all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flask1/templates/ohlc_new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python-hello-world.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python-hello-world.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/hello.deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/hello.deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/hello.service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup/hello.service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/backup/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/mysql-deployment.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20221030_0002" />
+    <property name="com.google.cloudcode.ide_session_index" value="20221031_0000" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/flask1/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -224,7 +193,7 @@
       <workItem from="1666926849394" duration="162000" />
       <workItem from="1666927034858" duration="8459000" />
       <workItem from="1666966533542" duration="39673000" />
-      <workItem from="1667058719330" duration="14954000" />
+      <workItem from="1667058719330" duration="15560000" />
     </task>
     <servers />
   </component>
