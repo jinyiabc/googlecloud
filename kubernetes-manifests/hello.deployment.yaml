@@ -46,6 +46,16 @@ spec:
           value: "8080"
         - name: MYSQL_DB_HOST
           value: flask-mysql
+        - name: INSTANCE_HOST
+          value: "172.17.0.3"
+        - name: DB_PORT
+          value: "3306"
+        - name: DB_USER
+          value: "root"
+        - name: DB_PASS
+          value: "Hangzhou123"
+        - name: DB_NAME
+          value: "mydb"
         readinessProbe:
           tcpSocket:
             port: 8080

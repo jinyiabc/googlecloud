@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28b81896-8bbc-4be4-8d76-af9032b0cba6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/flask1/connect_connector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flask1/connect_tcp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flask1/connect_unix.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/mysql-deployment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/hello.deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/hello.deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flask1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/flask1/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flask1/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +67,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20221031_0000" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/flask1/templates" />
+    <property name="com.google.cloudcode.ide_session_index" value="20221031_0006" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/flask1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -69,16 +77,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\googlecloud\src\flask1\templates" />
+      <recent name="D:\work\googlecloud\src\flask1" />
       <recent name="D:\work\googlecloud\kubernetes-manifests" />
+      <recent name="D:\work\googlecloud\src\flask1\templates" />
       <recent name="D:\work\googlecloud\src" />
       <recent name="D:\work\googlecloud" />
-      <recent name="D:\work\googlecloud\src\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\googlecloud\src" />
       <recent name="D:\work\googlecloud\src\backup" />
       <recent name="D:\work\googlecloud\src\flask1" />
-      <recent name="D:\work\googlecloud\src" />
       <recent name="D:\work\googlecloud\backup" />
       <recent name="D:\work\googlecloud\src\helper" />
     </key>
@@ -130,17 +138,17 @@
     </configuration>
     <configuration name="local" type="google-container-tools-skaffold-run-config" factoryName="google-container-tools-skaffold-run-config-dev" show_console_on_std_err="false" show_console_on_std_out="false">
       <option name="allowRunningInParallel" value="false" />
-      <option name="buildEnvironment" value="Google Cloud Build" />
+      <option name="buildEnvironment" value="Local" />
       <option name="cleanupDeployments" value="true" />
       <option name="deployToCurrentContext" value="false" />
-      <option name="deployToMinikube" value="false" />
+      <option name="deployToMinikube" value="true" />
       <option name="envVariables">
         <map>
           <entry key="GOOGLE_APPLICATION_CREDENTIALS" value="C:\Users\jinyi\AppData\Roaming\gcloud\application_default_credentials.json" />
         </map>
       </option>
       <option name="imageRepositoryOverride" />
-      <option name="kubernetesContext" value="docker-desktop" />
+      <option name="kubernetesContext" />
       <option name="mappings">
         <list />
       </option>
@@ -155,8 +163,8 @@
         <list />
       </option>
       <option name="skaffoldNamespace" />
-      <option name="skaffoldProfile" value="cloudbuild" />
-      <option name="skaffoldWatchMode" value="ON_DEMAND" />
+      <option name="skaffoldProfile" />
+      <option name="skaffoldWatchMode" value="ON_FILE_SAVE" />
       <option name="statusCheck" value="true" />
       <option name="verbosity" value="WARN" />
       <method v="2" />
@@ -193,7 +201,9 @@
       <workItem from="1666926849394" duration="162000" />
       <workItem from="1666927034858" duration="8459000" />
       <workItem from="1666966533542" duration="39673000" />
-      <workItem from="1667058719330" duration="15560000" />
+      <workItem from="1667058719330" duration="18070000" />
+      <workItem from="1667196644596" duration="3049000" />
+      <workItem from="1667200211306" duration="12388000" />
     </task>
     <servers />
   </component>
@@ -219,6 +229,17 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/src/china-stock-lib" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/flask1/connect_tcp.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/googlecloud$test_database.coverage" NAME="test_database Coverage Results" MODIFIED="1666762517199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
