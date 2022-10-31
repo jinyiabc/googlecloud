@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head></head>
+   <body>
+
+      <h3>
+         <a href = "{{ url_for('ohlc_all') }}">Comments - Flask
+            SQLAlchemy example</a>
+      </h3>
+
+      <hr/>
+      {%- for message in get_flashed_messages() %}
+         {{ message }}
+      {%- endfor %}
+
+      <h3>OHLC (<a href = "{{ url_for('ohlc') }}">Add ohlc
+         </a>)</h3>
+
+      <table>
+         <thead>
+            <tr>
+               <th>Open</th>
+               <th>High</th>
+               <th>Low</th>
+               <th>Close</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for ohlc in ohlc_all %}
+               <tr>
+                  <td>{{ ohlc.open }}</td>
+                  <td>{{ ohlc.high }}</td>
+                  <td>{{ ohlc.low }}</td>
+                  <td>{{ ohlc.close }}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+
+   </body>
+</html>

@@ -3,19 +3,38 @@
 # - Pod exposes port 8080
 # - specify PORT environment variable to the container process
 # Syntax reference https://kubernetes.io/docs/concepts/configuration/overview/
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-hello-world
+spec:
+  type: LoadBalancer
+  selector:
+    app: python-hello-world
+    tier: frontend
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: python-hello-world
+  labels:
+    name: python-hello-world
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: python-hello-world
+      tier: frontend
   template:
     metadata:
       labels:
         app: python-hello-world
+        tier: frontend
     spec:
       containers:
       - name: server
@@ -25,6 +44,8 @@ spec:
         env:
         - name: PORT
           value: "8080"
+        - name: MYSQL_DB_HOST
+          value: flask-mysql
         readinessProbe:
           tcpSocket:
             port: 8080

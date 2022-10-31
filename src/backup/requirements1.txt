@@ -14,4 +14,3 @@ PyMySQL==1.0.2
 SQLAlchemy==1.4.42
 Werkzeug==2.2.2
 zipp==3.10.0
-SQLAlchemy-Utils==0.38.3

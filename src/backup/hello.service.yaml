@@ -6,11 +6,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: python-hello-world-external
+  name: python-hello-world
 spec:
   type: LoadBalancer
   selector:
     app: python-hello-world
+    tier: frontend
   ports:
   - name: http
     port: 80
