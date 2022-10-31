@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+          <title>TradingView Webhook Log</title>
+         <!-- Style -->
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+          <link href="../static/assets/css/fresh-bootstrap-table.css" rel="stylesheet" />
+
+          <!-- Fonts and icons -->
+          <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+          <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
+
+   </head>
+   <body>
+      <div class="section">
+         <h3>
+            <a href = "{{ url_for('ohlc_all') }}">Comments - Flask
+               SQLAlchemy example</a>
+         </h3>
+
+         <hr/>
+         {%- for message in get_flashed_messages() %}
+            {{ message }}
+         {%- endfor %}
+
+         <h3>OHLC (<a href = "{{ url_for('ohlc') }}">Add ohlc
+            </a>)</h3>
+
+         <table>
+            <thead>
+               <tr>
+                  <th>Symbol</th>
+                  <th>Datetime</th>
+                  <th>Open</th>
+                  <th>High</th>
+                  <th>Low</th>
+                  <th>Close</th>
+                  <th>volume</th>
+               </tr>
+            </thead>
+
+            <tbody>
+               {% for ohlc in ohlc_all %}
+                  <tr>
+                     <td>{{ ohlc.symbol }}</td>
+                     <td>{{ ohlc.dt }}</td>
+                     <td>{{ ohlc.open }}</td>
+                     <td>{{ ohlc.high }}</td>
+                     <td>{{ ohlc.low }}</td>
+                     <td>{{ ohlc.close }}</td>
+                     <td>{{ ohlc.volume }}</td>
+                  </tr>
+               {% endfor %}
+            </tbody>
+         </table>
+
+      </div>
+   </body>
+</html>
