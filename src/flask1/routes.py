@@ -40,9 +40,10 @@ def ohlc():
     else:
         if request.is_json is True:
             content = request.get_json()
-            logger.warning(f"Content of REQUEST: '{content}'")
-            ohlc = ohlc_test(content['open'], content['high'],
-                               content['low'], content['close'])
+            logger.warning(f"Content of REQUEST: '{content}'")  # {'symbol':'ES1', 'dt':'2022-10-31T14:13:00Z', 'open':3878.5, 'high':3878.5, 'low':3877.5, 'close':3878, 'volume':215}
+            temp_dt = dt.fromisoformat(content['dt'][:-1])
+            ohlc = ohlc_test(content['symbol'], temp_dt, content['open'], content['high'],
+                               content['low'], content['close'], content['volume'])
             db.session.add(ohlc)
             db.session.commit()
             flash('Record was successfully added')

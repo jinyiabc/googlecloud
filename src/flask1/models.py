@@ -25,13 +25,18 @@ class ohlc_test(db.Model):
     high = db.Column(db.Float)
     low = db.Column(db.Float)
     close = db.Column(db.Float)
+    dt = db.Column(db.DateTime)
+    symbol = db.Column(db.String(20))
+    volume = db.Column(db.Float)
 
-
-    def __init__(self, open, high, low, close):
+    def __init__(self, symbol, dt, open, high, low, close, volume):
         self.open = open
         self.high = high
         self.low = low
         self.close = close
+        self.dt = dt
+        self.symbol = symbol
+        self.volume = volume
 
     def __repr__(self):
         return "<User {}>".format(self.username)

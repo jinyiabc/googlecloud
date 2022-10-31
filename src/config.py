@@ -122,7 +122,7 @@ class Config:
         )
         url = pool.url
     else:   # for local test.
-        db_host = os.environ["INSTANCE_HOST"]
+        db_host = os.environ["MYSQL_DB_HOST"]
         db_port = os.environ["DB_PORT"]  # e.g. 3306
         url = sqlalchemy.engine.url.URL.create(
             drivername="mysql+pymysql",
